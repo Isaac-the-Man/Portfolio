@@ -1,0 +1,227 @@
+/* Primary: #141414 DarkLight: #212121 Dark: #000000 */
+/* Secondary: #00c853 Light: #5efc82 Dark: #009624 */
+/* Font: #ffffff Light grey: #212121 */
+
+html, body {
+  margin: 0 100px 0 100px;
+  padding: 0;
+  background-color: #212121;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+div {
+  border: solid red 1px;
+}
+
+/* Navigation Bar */
+.navbarDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li a{
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  color: white;
+}
+.navbar li a:active {
+  border-bottom: 2px solid #00c853;
+}
+.navbar li:first-child a {
+  border-bottom: 2px solid #00c853;
+}
+.navbarDiv h1{
+  margin: 0;
+  padding: 5px 20px 5px 20px;
+}
+.navbar li a:hover {
+  border-bottom: 2px solid #00c853;
+}
+
+/* Intro */
+.quoteDiv {
+  background-color: #141414;
+  min-height: 120px;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quoteDiv h2 {
+  text-align: center;
+  margin: 0 60px 0 60px;
+  font-size: 22px;
+}
+
+/* Image Slider */
+.container {
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+.item {
+  overflow: hidden;
+  height: 500px;
+}
+.item img {
+    position: absolute;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
+
+/* Featured Image */
+.markers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  color: grey;
+}
+.markers a{
+  font-size: 20px;
+  margin: 5px;
+  color: grey;
+}
+.markers h3{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.featuredCard {
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0 0 0;
+  height: 400px;
+}
+.featuredImg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 60%;
+  overflow: hidden;
+}
+#featuredImg1 {
+  background-image: url("resources/image8.jpg");
+}
+#featuredImg2 {
+  background-image: url("resources/image9.jpg");
+}
+#featuredImg3 {
+  background-image: url("resources/image5.jpg");
+}
+.innerCard {
+  width:40%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.innerCard p{
+  color: #c4c4c4;
+  font-size: 20px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.tagSpan {
+  margin: auto 0 0 0;
+}
+.tags {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #00c853;
+  border-radius: 5px;
+  color: #00c853;
+  font-size: 16px;
+  text-decoration: none;
+}
+.tags:hover {
+  color: white;
+  font-size: 16px;
+  text-decoration: inherit;
+  background-color: #00c853;
+}
+
+/* footer */
+footer {
+  background-color: #000000;
+  height: 200px;
+  margin: 20px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .fa {
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+  background: #00c853;
+  color: white;
+  text-decoration: none;
+}
+footer .fa:hover{
+  color: #00c853;
+  background: white
+}
+footer p {
+  margin: 10px;
+}
+
+/* For #Planets */
+.tagIntro h2{
+  color: #00c853;
+  font-size: 32px;
+}
+.imgGalleryDiv {
+  display: flex;
+  flex-direction: row;
+}
+.imgGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.3%;
+}
+.galleryCard {
+  background-color: #141414;
+  width: 200px;
+  min-height: 100px;
+}
+.galleryImg {
+  height: 100px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#galleryImg1 {
+  background-image: url("resources/planets/planet7.png");
+}
