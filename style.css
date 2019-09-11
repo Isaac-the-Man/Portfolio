@@ -17,9 +17,9 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
-div {
+/* div {
   border: solid red 1px;
-}
+} */
 
 /* Navigation Bar */
 .navbarDiv {
@@ -47,7 +47,7 @@ div {
 .navbar li a:active {
   border-bottom: 2px solid #00c853;
 }
-.navbar li:first-child a {
+.navbarActive {
   border-bottom: 2px solid #00c853;
 }
 .navbarDiv h1{
@@ -197,6 +197,13 @@ footer p {
 }
 
 /* For #Planets */
+.tagIntro {
+  background-color: #141414;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tagIntro h2{
   color: #00c853;
   font-size: 32px;
@@ -208,13 +215,31 @@ footer p {
 .imgGallery {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   width: 33.3%;
+  margin: 10px;
 }
 .galleryCard {
+  margin-top: 15px;
   background-color: #141414;
-  width: 200px;
+  width: 100%;
   min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.galleryCard img {
+  width: 100%;
+}
+.galleryCard div {
+  margin: 5px;
+}
+.galleryCard div h2 {
+  margin: 0;
+}
+.galleryCard div p {
+  color: #c4c4c4;
 }
 .galleryImg {
   height: 100px;
