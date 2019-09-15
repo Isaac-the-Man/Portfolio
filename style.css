@@ -66,6 +66,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .quoteDiv h2 {
   text-align: center;
@@ -78,6 +79,7 @@ a:hover {
   width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .item {
   overflow: hidden;
@@ -119,6 +121,7 @@ a:hover {
   flex-direction: row;
   margin: 15px 0 0 0;
   height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .featuredImg {
   background-repeat: no-repeat;
@@ -175,6 +178,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer .fa {
   padding: 10px 0 10px 0;
@@ -203,6 +207,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .tagIntro h2{
   color: #00c853;
@@ -221,13 +226,44 @@ footer p {
   margin: 10px;
 }
 .galleryCard {
+  animation-name: up-appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
   margin-top: 15px;
   background-color: #141414;
   width: 100%;
   min-height: 100px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes up-appear{
+  /* upward appearance of card */
+  0% {
+    top: 50px;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.galleryCard:hover {
+  animation-name: enlarge;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes enlarge {
+  /* enlarge card when hover */
+  0% {
+    transform: scale(1);
+    z-index: 2;
+  }
+  100% {
+    transform: scale(1.2);
+    z-index: 2;
+  }
 }
 .galleryCard img {
   width: 100%;
@@ -241,12 +277,53 @@ footer p {
 .galleryCard div p {
   color: #c4c4c4;
 }
-.galleryImg {
-  height: 100px;
-  width: 200px;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+/* Contact Page */
+.contactField {
+  display: flex;
+  justify-content: center;
 }
-#galleryImg1 {
-  background-image: url("resources/planets/planet7.png");
+.contactFormCard {
+  margin-top: 15px;
+  width: 800px;
+  padding: 15px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.contactRow  h3{
+  margin: 0 20px 0 0;
+}
+.contactRow  input{
+  color: black;
+  margin: 0;
+}
+.contactRadio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+}
+.contactRadio h3 {
+  margin: 0 20px 0 0;
+}
+.contactRadioOption {
+  margin-right: 10px;
+}
+.contactSubmit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.contactSubmit input{
+  background-color: #00c853;
+  border: none;
+  padding: 10px 20px 10px 20px;
 }
