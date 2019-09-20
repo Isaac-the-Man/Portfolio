@@ -5,7 +5,8 @@
 html, body {
   margin: 0 100px 0 100px;
   padding: 0;
-  background-color: #212121;
+  /* background-color: #212121; */
+  background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
   font-family: 'Nunito', sans-serif;
   color: white;
 }
@@ -27,7 +28,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: transparent;
 }
 .navbar{
   display: flex;
@@ -281,7 +283,7 @@ footer p {
 /* Contact Page */
 .contactField {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .contactFormCard {
   margin-top: 15px;
@@ -326,4 +328,136 @@ footer p {
   background-color: #00c853;
   border: none;
   padding: 10px 20px 10px 20px;
+}
+
+/* Info Card */
+.infoSidebar {
+  background-color: #009624;
+  width: 300px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.infoImg {
+  width: auto;
+  margin: 10px;
+}
+.infoTxt {
+  padding: 10px;
+}
+.infoTxt h2 {
+  margin: 0;
+  padding: 0;
+}
+.infoTxt p {
+  font-size: 20px;
+}
+
+/* About Card */
+.aboutCard {
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* Test star */
+.stars {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.stars-small {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.star-2 {
+  margin-top: 21%;
+  margin-left: -110px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-3 {
+  margin-top: 5%;
+  margin-left: -150px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-1 {
+  margin-top: 15%;
+  margin-left: -100px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-4 {
+  margin-top: 1%;
+  margin-left: -60px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-8 {
+  margin-top: 10%;
+  margin-left: 1200px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-7 {
+  margin-top: 4%;
+  margin-left: 1130px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-6 {
+  margin-top: 17%;
+  margin-left: 1280px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+.star-5 {
+  margin-top: 2%;
+  margin-left: 1250px;
+  position: absolute;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 5;
+}
+@keyframes twinkle-1 {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
 }
