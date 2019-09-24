@@ -7,7 +7,8 @@ html, body {
   padding: 0;
   /* background-color: #212121; */
   /* background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6); */
-  background: linear-gradient(black, #140340, #230571, #3707B1, #3F08CA);
+  /* background: linear-gradient(black, #140340, #230571, #3707B1, #3F08CA); */
+  background: linear-gradient(black, #09011C, #14033D, #1F0561);
   font-family: 'Nunito', sans-serif;
   color: white;
 }
