@@ -6,7 +6,8 @@ html, body {
   margin: 0 100px 0 100px;
   padding: 0;
   /* background-color: #212121; */
-  background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  /* background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6); */
+  background: linear-gradient(black, #140340, #230571, #3707B1, #3F08CA);
   font-family: 'Nunito', sans-serif;
   color: white;
 }
@@ -69,6 +70,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: up-appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .quoteDiv h2 {
   text-align: center;
@@ -82,6 +86,9 @@ a:hover {
   margin: 15px 0 0 0;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: up-appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .item {
   overflow: hidden;
@@ -124,6 +131,9 @@ a:hover {
   margin: 15px 0 0 0;
   height: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: up-appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .featuredImg {
   background-repeat: no-repeat;
@@ -284,6 +294,9 @@ footer p {
 .contactField {
   display: flex;
   justify-content: space-between;
+  animation-name: up-appear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .contactFormCard {
   margin-top: 15px;
@@ -467,3 +480,8 @@ footer p {
     opacity: 0.5;
   }
 }
+
+/* Horizontal Divider */
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
